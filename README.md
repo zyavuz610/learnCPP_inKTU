@@ -11,3 +11,6 @@ Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest 
 * https://codesignal.com/ : Algoritma + Programlama
 * https://www.hackerrank.com/
 * https://projecteuler.net/
+
+## Yararlı Kaynaklar
+* https://seyler.eksisozluk.com/kendi-basina-c-programlama-dili-ogrenmek-isteyenlere-tavsiyeler
