@@ -96,6 +96,6 @@ int main() {
                         hacim hacim1;           // hacim anahtar kelimesi artık float olarak değerlendirilecek
         *********************************************************************
         enum
-                - değişkenler billi bilgileri tutmak için kullanılır ve belirli tiplerde tanımlanır
+                - değişkenler belli bilgileri tutmak için kullanılır ve belirli tiplerde tanımlanır
                 - değişkenler bellekte yer kaplar
 */
