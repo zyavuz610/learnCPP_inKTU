@@ -14,7 +14,8 @@ PloyMorphizm
 /*
 #include <iostream> 
 using namespace std;
- 
+
+// ŞEKİL ÇİZEREK İZAH EDELİM
 class Shape {
    protected:
       int width, height;
@@ -25,6 +26,7 @@ class Shape {
          height = b;
       }
       int area() {
+      // virtual int area() {  // polimorfizm için  
          cout << "Parent class area :" <<endl;
          return 0;
       }
@@ -67,6 +69,8 @@ int main() {
    // call triangle area.
    shape->area();
    
+
+   // burada polimorfizm yapabilmek için base class ın virtual olması gerekir
    return 0;
 }
 */
