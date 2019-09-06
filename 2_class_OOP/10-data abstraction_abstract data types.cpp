@@ -3,6 +3,9 @@ Data Abstraction, Classes, and Abstract Data Types - Veri Soyutlama
   zaten var olan nesnelere davranışlar ekleyerek bir sınıf yapılıyor
 
 The data type clockType has three data members and the following basic operations:
+   - second
+   - minute
+   - hour
 1. Set the time.
 2. Return the time.
 3. Print the time.
@@ -31,6 +34,8 @@ operations
    	Increment the time by one hour.
    	Compare the two times to see whether they 
      are equal.
+
+     // *********** let's implement ***************
 */
 //-------------------------------------------------------------------------------
 /*

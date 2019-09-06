@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-  int    i, j=0, k; // i,j,k referans ismiyle kullanılabilen int türünde değişken tanımlanmıştır.
+  int    i, j=0, k; // i,j,k ismiyle kullanılabilen int türünde değişken tanımlanmıştır.
   i=5;
   j=-5;
   k=i*j;

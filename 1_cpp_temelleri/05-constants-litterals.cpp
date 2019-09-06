@@ -1,3 +1,8 @@
+/*
+	- const vs #define
+	- litterals (sabitler), eşitliğin sağ tarafında bulunurlar
+*/
+
 #include <iostream>
 using namespace std;
 /*

@@ -71,5 +71,73 @@ int main() {
     girilen cümlenin hece sayısını bulalım
 */  
 
+//----------------------------------------------------------------------------------------
+
+/*
+    // Input Functions:  getline, push_back(), pop_back()
+    getline(cin,str);
+    cout << str << endl; 
+    // push_back() to insert a character at end
+    str.push_back('s'); 
+    cout << str << endl;
+  
+    // pop_back() to delete a character from end 
+    str.pop_back(); 
+    cout << str << endl;
+*/
+
+//---------------------------------------------------------------------
+
+/*
+    // Capacity Functions
+        // Initializing string 
+    string str = "c++ programming is easy to learn"; 
+    cout << str << endl; 
+    str.resize(13);
+    cout << str << endl;  
+    cout << "Capacity: " << str.capacity() << endl;
+    cout<<"length: "<<str.length()<<endl;
+    str.shrink_to_fit();
+    cout << "capacity after shrinking is : " << str.capacity() << endl;
+*/
+
+//-------------------------------------------------------------------------------
+
+/*
+    // Manipulating Functions. copy(“char array”, len, pos), swap()
+
+    string str1 = "geeksforgeeks is for geeks"; 
+  
+    // Declaring 2nd string 
+    string str2 = "geeksforgeeks rocks"; 
+  
+    // Declaring character array 
+    char ch[80]; 
+  
+    // using copy() to copy elements into char array 
+    // copies "geeksforgeeks" 
+    str1.copy(ch,13,0); 
+  
+    // Diplaying char array 
+    cout << "The new copied character array is : "; 
+    cout << ch << endl << endl; 
+  
+    // Displaying strings before swapping 
+    cout << "The 1st string before swapping is : "; 
+    cout << str1 << endl; 
+    cout << "The 2nd string before swapping is : "; 
+    cout << str2 << endl; 
+  
+    // using swap() to swap string content 
+    str1.swap(str2); 
+  
+    // Displaying strings after swapping 
+    cout << "The 1st string after swapping is : "; 
+    cout << str1 << endl; 
+    cout << "The 2nd string after swapping is : "; 
+    cout << str2 << endl; 
+*/
+
+// http://www.cplusplus.com/reference/string/string/
   return 0;
 }

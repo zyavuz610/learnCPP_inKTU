@@ -39,7 +39,7 @@ int main () {
 
 //    fonksiyon çağrılırken call by value gibi çağrılırken
 //    ancak fonksiyona değişkenlerin referansları kopyalanırlar
-//    dolayısıyla içerikler etkilenir, çünkü değerler kopyalanmıyor, adres kopyalanıyor
+//    dolayısıyla içerikler etkilenir, çünkü değerler kopyalanmıyor, referans kopyalanıyor
 /*
     int a=5,b=6;
     cout<<"Takastan Önce (a,b)=("<<a<<","<<b<<")"<<endl;

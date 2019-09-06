@@ -54,10 +54,11 @@ int main(void) {
 //-----------------------------------------------------------------------------------
 /*
 	Static fonksiyonlar
-		* bir fonk. staik olarak tanımlanırsa class tan türeyen nesnelerden bağımsız bir fonksiyon olur (java da public static void main() gibi)
+		* bir fonk. statik olarak tanımlanırsa class tan türeyen nesnelerden bağımsız bir fonksiyon olur (java da public static void main() gibi)
 		* static olarak tanımlanan fonksiyon class tan herhangi bir nesne tanımlanmasa da çağırılabilir
 			class_name::func();
-		* static fonk. sadece static üyelere ve class dışındaki fonk. erişebilir	
+		* static fonk. sadece static üyelere ve class dışındaki fonk. erişebilir,
+         - class method ları statik değişken ve methodlara erişebilir.	
 		* static fonk. larda this pointer kullanılmaz
 		* static fonk. lar sınıftan obje türetilip türetilmediğini öğrenmek için kullanılabilir.
 */

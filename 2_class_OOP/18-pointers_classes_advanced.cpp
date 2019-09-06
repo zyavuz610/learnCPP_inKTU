@@ -116,6 +116,9 @@ DAHA ÖNCE TANIMLANAN BOX SINIFI İÇİN
 */
 //**********************************************************************
 /*
+
+	// Dikkat: implementation hiding kullanıldı
+
 // THE ADDRESS OF OPERATOR AND CLASSES
 // bellek değişimlerini şematik olarak çizelim
 //----------------------------------------------

@@ -12,6 +12,8 @@ using namespace std;
 
       DİKKAT: 
         Bu dosyada parametre - arguman farkına değinilmektedir.
+         - parametre: fonksiyona işlenmesi için gelen değişken, giriş
+         - argüman: fonksiyon çağrılırken fonksiyona verilen değer (sabit ya da değişken), çıkış
 */
 //-------------------------------------------------------------
 class Box {

@@ -21,6 +21,8 @@ int main () {
    // open a file in write mode.
    ofstream outfile;
    outfile.open("afile.dat");
+   // veya
+   // outfile.open("afile.dat", ios::app);
 
    cout << "Writing to the file" << endl;
    cout << "Enter your name: "; 

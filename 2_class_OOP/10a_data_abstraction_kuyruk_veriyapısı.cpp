@@ -47,7 +47,6 @@ class MyQueue{
       else
         return 0;
     }
-// https://codeshare.io/5QrXB7
   private:
     int items[N];
     int readPointer;

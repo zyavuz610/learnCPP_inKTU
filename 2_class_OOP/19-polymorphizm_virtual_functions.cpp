@@ -86,7 +86,7 @@ Parent class area :
 /*
 	Virtual Functions (Sanal Fonksiyonlar)
 		* sanal fonksiyonlar görünüşte var olup gerçekte olmayan fonksiyonlardır.
-		* Gerçekte bir gözdesi olmayan fonksiyonlardır
+		* Gerçekte bir gövdesi olmayan fonksiyonlardır
 		* miras kavramında, base class'te sanal bir fonksiyon tanımlanır ve derived class'ta bu fonksiyon aşırı yüklenir
 		* daha sonra base class türünde bir pointer ile derived class fonksiyonları çağrılır (polimorfizm)
 		

@@ -15,6 +15,7 @@ o2.yazdir2();
 
 //====================================================
 // Ogrenci.cpp
+/*
 #include <iostream>
 #include "Ogrenci.h"
 #define AK 0.5
@@ -113,9 +114,11 @@ string Ogrenci::HarfNotHesapla(){
   else harfNot="E";
   return harfNot;
 }
+*/
 
 //========================================================
 // Ogrenci.h
+/*
 using namespace std;
 class Ogrenci{
   public:
@@ -151,3 +154,5 @@ class Ogrenci{
 
     bool ortalamaHesaplandi;
 };
+
+*/
