@@ -1,4 +1,4 @@
-# 2018-19 Güz - Ders Planı
+# 2019-20 Güz Yarıyılı - Ders Planı
 
 ## Hafta 01
 * Tanışma
