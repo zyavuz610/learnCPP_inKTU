@@ -3,8 +3,6 @@
 * İlk Hafta Ders Notları https://bit.ly/2pu3Oge
 * Slayt01 https://bit.ly/2QVIIny
 
-01_cplusplus_basics - temel c++ konuları tekrar edilmektedir.
-
 
 ## Tavsiye Edilen Siteler
 Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest ödev için verilecek eşik ödevinden muafiyet getirebilir. Bu yüzden boş kaldıkça bu araçları kullanarak alıştırma yapın, seviyeleri tamamlamaya çalışın.
@@ -14,3 +12,9 @@ Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest 
 
 ## Yararlı Kaynaklar
 * https://seyler.eksisozluk.com/kendi-basina-c-programlama-dili-ogrenmek-isteyenlere-tavsiyeler
+
+## Haftalara Göre Ders Planları (Müfredat)
+Her gün değişen ve gelişen bilişim dünyasında KTÜ Bilgisayar Mühendisliğindeki "Nesne Yönelimli Programlama" isimli derste anlatılan C++ diline ilişkin ders notları, yazılan kodlar, verilen örnekler ve müfredat kısmi değişikliklere uğramaktadır.
+
+* [2019](2019-guz-ders-plan.md)
+* [2018](2018-guz-ders-plan.md)
