@@ -10,14 +10,17 @@
 * Global, lokal ve formal değişkenler
 * Sabitler (litterals)
 * Operatörler ve Öncelikleri (koşul operatörü)
-  
-## Hafta 02
 * Karar İfadeleri (if, elseif, else, switch-case, ?:)
 * iç içe karar ifadeleri
 * Tekrarlı İfadeler (for, while, do-while)
-* Örnekler: 10 adet not için max, min, ortalama, 2. max, 2. min, standar sapma bulma
-* Ödevler: 
-  * 1)ekrana yıldızlarla farklı şekiller çizin, 2)girilen sayının asal çarpanlarını bulun, 3)1000 den küçük fibonacci sayılarını bulun, 4)girilen sayı çift ise iki asal sayı toplamı şeklinde ifade edin, değilse asal çarpanlarına ayırın, asal ise bir şey yapmayın
+* Örnek: girilen sayı çift ise iki asal sayı toplamı şeklinde ifade edin.
+  
+## Hafta 02
+* Örnekler: 10 adet not için max, min, ortalama, 2. max, 2. min, standart sapma bulma
+  * 1) ekrana yıldızlarla farklı şekiller çizin, 
+  * 2) girilen sayının asal çarpanlarını bulun, 
+  * 3) 1000 den küçük fibonacci sayılarını bulun, 
+  * 4) girilen sayıyı asal çarpanlarına ayırın, asal ise bir şey yapmayın
 * Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
 * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
   
