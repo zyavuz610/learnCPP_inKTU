@@ -10,11 +10,9 @@
 * Global, lokal ve formal değişkenler
 * Sabitler (litterals)
 * Operatörler ve Öncelikleri (koşul operatörü)
-* Örnek: Ortalama Not Hesaplama
   
 ## Hafta 02
 * Karar İfadeleri (if, elseif, else, switch-case, ?:)
-* Örnek: harfli not hesabı
 * iç içe karar ifadeleri
 * Tekrarlı İfadeler (for, while, do-while)
 * Örnekler: 10 adet not için max, min, ortalama, 2. max, 2. min, standar sapma bulma
