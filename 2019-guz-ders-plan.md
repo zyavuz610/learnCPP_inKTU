@@ -23,7 +23,11 @@
   * 4) girilen sayıyı asal çarpanlarına ayırın, asal ise bir şey yapmayın
 * Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
 * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
-  
+* Örnek 2: öğrenci not ortalaması hesabı
+  * değişken tanımlama, değişken türleri, int bölme, tür dönüşümü
+  * notların ekrana yazılması (setw,setprecision,fixed)
+  * öğrenci numarası palindrome bir numara mı (tam sayı olarak, dizi kullanmadan işlem yap)
+
 ## Hafta 03
 * diziler: tek boyutlu (vector), iki boyutlu (matris), 3 ve daha fazla boyutlu (tensor)
 * örnek: notları dizide sakla, ort, min, max, std sapma bul, sırala
