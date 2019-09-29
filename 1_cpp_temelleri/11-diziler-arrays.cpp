@@ -7,8 +7,8 @@ using namespace std;
 		. Belli bir boyutu vardır, yani kaç eleman içerdiği bellidir (dizinin boyutu)
 		. aynı türden bireysel değişkenleri 
 		sayi, sayi1, sayi2, ..., sayi50 vs tanımlamak yerine dizi tanımlanır ve dizinin adına sıra numarası (indis,index) verilerek o elemana erişilir.
-		. diziler lineer veri türüdür, yani elemanlar bellekte peşpeşe dizilirler.
-		. sıra numarası (indis) c/c++ dilinde 0 dan başlar
+		. diziler lineer veri türüdür, yani elemanlar bellekte peşpeşe dizilirler ve tüm elemanlar aynı boyuttadırlar.
+		. sıra numarası (indis) c/c++ dilinde 0 dan başlar (bir çok programlama dilinde olduğu gibi; bu durum dizinin isminin aynı zamanda ilk elemanın başlangıç adresi olması ve sonraki elemanlara erişim için başlangıç adresi + indis in kullanılması ile de ilişkilidir.)
 
 		...
 		int sayi[100];	// 100 elemanlı int tipinde ve sayi isminde dizi
@@ -20,6 +20,12 @@ using namespace std;
 			int sayi[] = {2,3,5,6,9};	// 5 elemanlı dizi
 			sayi[0] = 10;				// ilk eleman 10 olarak ayarlanıyot
 			char s[] = {'B','i','l','g','i','s','a','y','a','r'};
+
+      konu olarak bilinmesi gerekeneler
+      - dizi oluşum, ilk değer verme
+      - elemanlara erişim, işlem yapmak (okuma yazma)
+        - string için toplu erişim
+        - diğer dizilerde tek tek erişim.
 			
       
 */
