@@ -30,9 +30,16 @@
 
 ## Hafta 03
 * diziler: tek boyutlu (vector), iki boyutlu (matris), 3 ve daha fazla boyutlu (tensor)
-* örnek: notları dizide sakla, ort, min, max, std sapma bul, sırala
+* örnek uygulamalar: 
+  * notları dizide sakla, ort, min, max, std sapma bul, sırala
+  * dizide geometrik olarak orta değer bulma,
+  * 2D uzayda (matris) orta değer bulunması,
+  * matris satırlar toplamı, sütunlar toplamı, matris çarpımı, transpoze.
 * string (karakter dizisi): 1) karakter dizisi şeklinde (char str[100]) 2) string tipi şeklinde
-* örnek uygulamalar: kelime büyük harf yap, boşluktan böl, virgülden böl, sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
+* örnek string uygulamalar: 
+  * kelime büyük harf yap, 
+  * boşluktan böl, virgülden böl, 
+  * sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
 * pointer, reference, dizi pointer ilişkisi
 * struct, yapılara giriş
   
