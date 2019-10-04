@@ -172,6 +172,37 @@ int main() {
         void f(int dizi[]) {
           ...
         }
+
+//  MATRİSLER İÇİN DURUM
+
+      1. pointer olarak: burada fonksiyonda formal parametre olarak pointer tanımlanır
+        void f(int **p) {
+          ...
+        }
+
+        çağırmadan önce şu yapılmalı (dinamik olarak yer ayrılmalı)
+        int **a1;
+        a1 = new int *[10];
+        for(int i = 0; i <10; i++)
+          a1[i] = new int[10];
+        f(a1);
+
+      2. boyutu belli dizi şeklinde:
+        void f(int a[][10]) {
+            // ...
+        } 
+
+      3. her bir satırıjn başlangıç adresini tutan pointer dizisi şeklinde
+        void f(int *dizi[10]) {
+          ...
+        }
+
+        çağırmadan önce şu yapılmalı (dinamik olarak yer ayrılmalı)
+        int *a1[10];
+        for(int i = 0; i <10; i++)
+          a1[i] = new int[10];
+        f(a1);
+      
 */
 /*
    int a[5] = {1000, 2, 3, 17, 50};
