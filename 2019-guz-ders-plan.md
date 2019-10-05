@@ -35,6 +35,8 @@
   * dizide geometrik olarak orta değer bulma,
   * 2D uzayda (matris) orta değer bulunması,
   * matris satırlar toplamı, sütunlar toplamı, matris çarpımı, transpoze.
+  
+## Hafta 04
 * string (karakter dizisi): 1) karakter dizisi şeklinde (char str[100]) 2) string tipi şeklinde
 * örnek string uygulamalar: 
   * kelime büyük harf yap, 
@@ -42,8 +44,6 @@
   * sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
 * pointer, reference, dizi pointer ilişkisi
 * struct, yapılara giriş
-  
-## Hafta 04
 * cin, cout advanced
 * string işlemleri (advanced)
 * struct dizileri, struct composition
