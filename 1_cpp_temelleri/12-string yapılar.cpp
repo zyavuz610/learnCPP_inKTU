@@ -106,5 +106,6 @@ int main() {
     cout<<endl<<char_dizisi<<endl;
 */
 //-------------------------------------------------------------
+// http://www.cplusplus.com/reference/string/string/
   return 0;
 }
