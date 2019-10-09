@@ -22,12 +22,15 @@ int main() {
 
 //---------------------------------------------------
 // koşul operatörü kullanımı (sadece eşitleme durumunda)
+
  /* 
  string sonuc="";
   sonuc=(ort<40)?"Kaldı":"Geçti";
   cout<<ort<<" -> "<<sonuc<<"\n";   
   */
+
 //-----------------------------------------------------
+
  /*
  // if, else if, else koşul merdiveni. örnek uyg: harfli not hebabı 
  if( ort<40 ){       // koşul ifadesi

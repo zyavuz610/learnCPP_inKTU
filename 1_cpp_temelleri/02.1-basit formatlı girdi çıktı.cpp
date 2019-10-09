@@ -46,7 +46,7 @@ int main() {
     //cout<<setw(15)<<fixed<<setprecision(10)<<ort<<endl;
   }
 */
-    
+//--------------------------------------------------------------    
 /*
   double a = 30;
   double b = 10000.0;
@@ -85,7 +85,7 @@ ayrıca bakınız (cin, cout nesnelerinin üye fonksiyonları)
     The first statement cin>>a; stores 25 in a.
     The second statement, cin.ignore(100,'\n'); discards all of the remaining numbers in the first line.
     The third statement cin>>b; stores 12 (from the next line) in b.
-    --------------------------------------------------
+//   --------------------------------------------------
 */    
   return 0;
 }
