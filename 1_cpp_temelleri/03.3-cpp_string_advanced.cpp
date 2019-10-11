@@ -10,10 +10,11 @@ int main() {
   char cstr[100];
   strcpy(cstr,str.c_str());
   cout<<cstr<<endl;
-  cout<<"ilk harf: "<<cstr[0]<<endl;
+  cout<<"ilk harf: "<<char(cstr[0] + 32)<<endl;
 */
 //-----------------------------------------------
-
+/*
+// 10'arlı sayılar ekliyoruz
   for(int x=0;x<5;x++){
     for(int i=0;i<10;i++){
       cout<<i;
@@ -39,18 +40,24 @@ int main() {
   cout<<str<<endl;
   cout<<"Size : "<<str.size()<<endl;
   if(str.empty()) cout<<"Boş String"<<endl;
-
+ */ 
+//-------------------------------------------------------
 /*
+  string str("Nesne Yönelimli Programlama");
   str.resize(str.size()+10);
   cout<<str<<endl;
   cout<<"Size : "<<str.size()<<endl;
-*/
+  */
+//-----------------------------
 /*
+  string str("Nesne Yönelimli Programlama");
   str.resize(str.size()+10,'-');
   cout<<str<<endl;
   cout<<"Size : "<<str.size()<<endl;
 */
+//--------------------------------
 /*
+  string str("Nesne Yönelimli Programlama");
   str.resize(str.size()-10);
   cout<<str<<endl;
   cout<<"Size : "<<str.size()<<endl;

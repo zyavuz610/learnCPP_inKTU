@@ -33,10 +33,13 @@ int main() {
   char ch1,ch2;
   int num;
   cin.get(ch1);
+  cin.get(ch1);
   cin.get(ch2);
   cin>>num;
+      
   // giriş: A 25
   // ch1='A';    ch2=' ';   num=25;
+  cout<<int(ch1)<<" "<<int(ch2)<<" "<<num;
 */
 //------------------------------------------------
 /*
@@ -49,13 +52,15 @@ int main() {
   // Consider the statements:
 
   cin>>a;
-  cin.ignore(100,'\n');
+  cin.ignore(5,'\n');
   cin>>b;
-*/
+
+  cout<<"a="<<a<<endl;
+  cout<<"b="<<b<<endl;
   // The first statement cin>>a; stores 25 in a. 
   // The second statement, cin.ignore(100,'\n'); discards all of the remaining numbers in the first line.
   // The third statement cin>>b; stores 12 (from the next line) in b.
-
+*/
 //-----------------------------------------------------
 /*
   // cin.putback(ch);   1 karakter geri gider okur
