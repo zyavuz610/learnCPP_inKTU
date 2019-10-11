@@ -1,3 +1,7 @@
+/*
+Problem: 1000 sayısından küçük 3 veya 5 in katları olan sayıların toplamı
+*/
+
 #include <iostream>
 using namespace std;
 int main()
