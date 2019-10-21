@@ -42,43 +42,48 @@
   * kelime büyük harf yap, 
   * boşluktan böl, virgülden böl, 
   * sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
-* pointer, reference, dizi pointer ilişkisi
-* struct, yapılara giriş
-* cin, cout advanced
 * string işlemleri (advanced)
-* struct dizileri, struct composition
-* dosya işlemleri
+* pointer, reference,
+* dizi pointer ilişkisi
+* cin, cout advanced
+* enum, namespaces
 
 ## Hafta 05
-* union, namespaces
 * class, struct vs class, 
 * class üyeleri (değişkenler<özellik>, fonksiyonlar<davranış>), 
 * :: operatörü, 
+* public, private, protected
 * getter(), setter() fonksiyonlar
+* constructor, parametreli constructor, 
+* destructor, copy constructor
   
   
 ## Hafta 06
-* public, private, protected
-* constructor, parametreli constructor, 
-
-## Hafta 07
-* destructor, copy constructor
 * data abstraction, iplementation hiding
 * code::blocks ile derleme, debug,
 * friend function, inline functions, this pointer
+* pointer to classes, 
+* basit pointer, class pointer, new, delete
+* serbest uygulama
+
+## Hafta 07
+* dosya işlemleri
+  * sıralı erişim
+  * rasgele erişim
 
 ## Hafta 08
-* pointer to classes, static members
+* static members
 * serbest uygulama
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
 
 ## Hafta 10
+* struct dizileri, struct composition
+* struct, yapılara giriş
 * composition, multi-level comğposition (oluşum, çok seviyeli (iç içe) oluşumlar)
 * inheritance (1-level, public, protected, private inheritance)
 * inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
-* basit pointer, class pointer, new, delete
   
 ## Hafta 11
 * function overloading
