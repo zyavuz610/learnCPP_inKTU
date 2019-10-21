@@ -67,9 +67,14 @@
 * serbest uygulama
 
 ## Hafta 07
-* dosya işlemleri
-  * sıralı erişim
-  * rasgele erişim
+* dosya işlemleri, sıralı erişim
+  * ofstream,ifstream, fstream
+  * ios::app,ios::in,ios::out,ios::ate,ios::trunc
+  * infile.eof(), infile>>, infile<<
+* dosya işlemleri, rasgele erişim
+  * inf.seekg(),inf.seekp()
+  * getline(inf,strData)
+  * --> byte stream: read(), write()
 
 ## Hafta 08
 * static members
