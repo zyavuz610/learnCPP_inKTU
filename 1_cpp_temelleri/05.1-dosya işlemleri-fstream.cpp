@@ -67,14 +67,14 @@ int main () {
  
    cout << "Reading from the file" << endl; 
    while(!infile.eof()){
-   infile >> data; 
+      infile >> data; 
 
-   // write the data at the screen.
-   cout << data << endl;
-   
-   // again read the data from the file and display it.
-   infile >> data; 
-   cout << data << endl; 
+      // write the data at the screen.
+      cout << data << endl;
+      
+      // again read the data from the file and display it.
+      infile >> data; 
+      cout << data << endl; 
    }
    */
 //------------------------------------------------------------   

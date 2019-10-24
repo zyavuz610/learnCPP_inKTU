@@ -13,7 +13,16 @@
 Moving to the beginning or end of the file is easy:
 
     inf.seekg(0, ios::beg); // move to beginning of file
-    inf.seekg(0, ios::end); // move to end of file    
+    inf.seekg(0, ios::end); // move to end of file
+
+    ios::beg  -> dosya başlangıcı    
+    ios::end  -> dosya sonu    
+    ios::cur  -> dosyada o anda bulunulan konum   
+
+    seekg(),  -> g for "get", okurken
+    seekp()   -> p for "put", yazarken
+    tellp()   -> curser ın o anda bulunduğu yeri söyler
+    tellg()   -> okurken g, yazarken p kullanılır
 
 */
 #include <iostream>
@@ -121,3 +130,41 @@ int main()
 }
 */
 //-----------------------------------------------------------------------
+
+/*
+// reading an entire binary file
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  streampos size;
+  char * memblock;
+
+  ifstream file ("example.bin", ios::in|ios::binary|ios::ate);
+  if (file.is_open())
+  {
+    size = file.tellg();
+    memblock = new char [size];
+    file.seekg (0, ios::beg);
+    file.read (memblock, size);
+    file.close();
+
+    cout << "the entire file content is in memory";
+
+    delete[] memblock;
+  }
+  else cout << "Unable to open file";
+  return 0;
+}
+*/
+
+//------------------------------
+/*
+#include <fstream.h>
+    ...
+    char buffer[100];
+    ofstream myFile ("data.bin", ios::out | ios::binary);
+    myFile.write (buffer, 100);
+
+*/
