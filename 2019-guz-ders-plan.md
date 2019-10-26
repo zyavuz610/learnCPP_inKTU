@@ -80,16 +80,17 @@
 * static members
 
 ## Hafta 08
+* struct dizileri, struct composition
+* struct, yapılara giriş
+* composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
+* inheritance (1-level, public, protected, private inheritance)
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
 
 ## Hafta 10
-* struct dizileri, struct composition
-* struct, yapılara giriş
-* composition, multi-level comğposition (oluşum, çok seviyeli (iç içe) oluşumlar)
-* inheritance (1-level, public, protected, private inheritance)
 * inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
+* örnekler
   
 ## Hafta 11
 * function overloading
