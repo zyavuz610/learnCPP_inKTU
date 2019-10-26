@@ -57,16 +57,11 @@
 * constructor, parametreli constructor, 
 * destructor, copy constructor
   
-  
 ## Hafta 06
-* data abstraction, iplementation hiding
-* code::blocks ile derleme, debug,
+* data abstraction,
 * friend function, inline functions, this pointer
 * pointer to classes, 
 * basit pointer, class pointer, new, delete
-* serbest uygulama
-
-## Hafta 07
 * dosya işlemleri, sıralı erişim
   * ofstream,ifstream, fstream
   * ios::app,ios::in,ios::out,ios::ate,ios::trunc
@@ -76,9 +71,15 @@
   * getline(inf,strData)
   * --> byte stream: read(), write()
 
-## Hafta 08
+## Hafta 07
+* dosya işlemleri - örneklerle
+  * rasgele erişim
+  * binary dosya okuma/yazma
+* dynamic memory management (örnekler ile)
+* iplementation hiding
 * static members
-* serbest uygulama
+
+## Hafta 08
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
