@@ -1,3 +1,13 @@
+Bu depo KTÜ Bilgisayar Mühendisliğinde okutulan **Nesne Yönelimli Programlama** dersinde görülen **C++** programlama diline ilişkin konuları ve örnek kodları içermektedir.
+Ders içeriği aşağıda verilen mantıksal sırada anlatılmaktadır. Konularla ilgili bilinmesi gerekn temel konular kaynak kodların içerisinde açıklama satırları olarak eklenmiştir. Kaynak kodları verildiği sırada sırasıyla incelemek ve çalıştırmak konu bütünlüğünün korunması için önemlidir.
+Her kaynak dosyaların isimlendirmesi şu şekildedir: **XX.Y-abcd.cpp** , burada **XX**(konunun işleneceği haftayı), **Y**(konunun o haftadaki konu sorasını), ve **abcd**(kaynak dosyanın içeriğini) ifade etmektedir.
+Kaynak kodlar genel olarak 3 bölümden oluşur. 
+* **1_cpp_temelleri:** Temel C++ konularını içermektedir.
+* **2_cpp_classes_OOP:** c++ nesne yönelimli programlama kavramlarını içerir.
+* **3_cpp_STL:** C++ Standart Template Library (STL) konularını içerir
+Bunların dışında; 
+* **4_cpp_ornekler:** farklı kaynaklardan öğrencilerin kullanımı için paylaşılan tüm kodları içerir.
+
 # Ders İçeriği
 ## Temel C++ Konuları
 * Giriş - Temel Konular
@@ -107,6 +117,9 @@ Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest 
 * https://projecteuler.net/
 
 ## Yararlı Kaynaklar
+* https://www.tutorialspoint.com/cplusplus/index.htm
+* https://www.geeksforgeeks.org/c-plus-plus/
+* http://www.cplusplus.com/
 * https://seyler.eksisozluk.com/kendi-basina-c-programlama-dili-ogrenmek-isteyenlere-tavsiyeler
 
 ## Haftalara Göre Ders Planları (Müfredat)
