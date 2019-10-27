@@ -8,6 +8,7 @@ Kaynak kodlar genel olarak 3 bölümden oluşur.
 * **1_cpp_temelleri:** Temel C++ konularını içermektedir.
 * **2_cpp_classes_OOP:** c++ nesne yönelimli programlama kavramlarını içerir.
 * **3_cpp_STL:** C++ Standart Template Library (STL) konularını içerir
+
 Bunların dışında; 
 * **4_cpp_ornekler:** farklı kaynaklardan öğrencilerin kullanımı için paylaşılan tüm kodları içerir.
 
