@@ -76,6 +76,7 @@
   * rasgele erişim
   * binary dosya okuma/yazma
 * dynamic memory management (örnekler ile)
+  * 1D, 2D
 * iplementation hiding
 * static members
 

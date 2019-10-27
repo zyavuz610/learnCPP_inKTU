@@ -1,8 +1,9 @@
 /*
 	* static anahtar kelimesi ile tanımlanır
 	* anlamı şudur:
-		class tan kaç adet obje üretilirse üretilsin static üyenin sadece 1 adet kopyası olur.
+		* class tan kaç adet obje üretilirse üretilsin static üyenin sadece 1 adet kopyası olur.
 		yani statik üye sınıftan türeyen tüm nesneler için ortaktır.
+      * class tan hiç nesne üretilmese de statik üyeler bellekte oluşur.
 	* static değişken ilk yaratıldığında 0 değeri alır (herhangi bir initialize yapılmasa bile)
 	* 
 */
