@@ -67,7 +67,7 @@ Bunların dışında;
 ## Nesne Yönelimli Programlama (C++)
 * sınıf ve nesne kavramı (class and object)
 * class tanımlama
-  * üye veri ve fonksiyonları
+  * üye veri ve üye fonksiyonları
 * erişim düzenleyiciler (access modifiers)
   * public, protected, private
 * getters, setters
