@@ -129,5 +129,5 @@ Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest 
 ## Haftalara Göre Ders Planları (Müfredat)
 Her gün değişen ve gelişen bilişim dünyasında KTÜ Bilgisayar Mühendisliğindeki "Nesne Yönelimli Programlama" isimli derste anlatılan C++ diline ilişkin ders notları, yazılan kodlar, verilen örnekler ve müfredat kısmi değişikliklere uğramaktadır.
 
-* [2019](2019-guz-ders-plan.md) - [Kaynak kodlar](https://repl.it/repls/folder/cpp_19g)
+* [2019](2019-guz-ders-plan.md) - [Kaynak kodlar - Repl.it](https://repl.it/repls/folder/cpp_19g)
 * [2018](2018-guz-ders-plan.md)
