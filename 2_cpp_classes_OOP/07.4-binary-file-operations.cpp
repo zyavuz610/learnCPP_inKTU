@@ -69,9 +69,11 @@ class Vector{
 
 int main() {
   Vector *v = new Vector(30);
+  // önce burayı çalıştırın
   //v->write("data.bin");  
   
   // -73 84 45 -75 119 -24 24 -84 -124 -69 109 -18 58-65 -108 -58 74 -108 -61 -43 -46 60 1 -90 -6 -36 -67 60 92 -22
+  // bunu çalıştırmadan önce "data.bin" dosyasının oluştuğundan emin olun
   v->read("data.bin");
   v->print();
 
