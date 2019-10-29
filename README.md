@@ -64,7 +64,7 @@ Bunların dışında;
 * Diğer Konular
   * namespaces
 
-## Nesne Yönelimli Programlama
+## Nesne Yönelimli Programlama (C++)
 * sınıf ve nesne kavramı (class and object)
 * class tanımlama
   * üye veri ve fonksiyonları
