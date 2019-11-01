@@ -70,7 +70,7 @@ class Classroom{
             <<endl;                     // dosyanın boyutu
       
       string str = "isim listesi\n";
-      dosya<<str;                   // yaz (app modunda olduğu için dosya sonuna yazar)
+      dosya<<str;                       // yaz (app modunda olduğu için dosya sonuna yazar)
       dosya.seekp(0,ios::beg);          // dosyanın başına atla
       cout  <<"Boyut:"
             <<dosya.tellp()             // tellg(): curserin bulunduğu yeri söyler
