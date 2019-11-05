@@ -75,27 +75,27 @@
 * dosya işlemleri - örneklerle
   * rasgele erişim
   * binary dosya okuma/yazma
+
+## Hafta 08
 * dynamic memory management (örnekler ile)
   * 1D, 2D
 * iplementation hiding
 * static members
-
-## Hafta 08
-* struct dizileri, struct composition
-* struct, yapılara giriş
-* composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
-* inheritance (1-level, public, protected, private inheritance)
+* function overloading
+* operator overloading
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
 
 ## Hafta 10
-* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
-* örnekler
+* struct dizileri, struct composition
+* struct, yapılara giriş
+* composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
+* inheritance (1-level, public, protected, private inheritance)
   
 ## Hafta 11
-* function overloading
-* operator overloading
+* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
+* örnekler
 
 ## Hafta 12
 * sanal fonk. ve sınıflar
