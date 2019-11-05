@@ -85,6 +85,10 @@
 * static members
 * function overloading
 * operator overloading
+<code>
+    * c3 = c1 + c2;     // operator overloading
+    * c3 = c1.sum(c2);  // normalde yapılması gereken
+</code>
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
