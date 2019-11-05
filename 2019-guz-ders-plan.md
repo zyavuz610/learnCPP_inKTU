@@ -8,9 +8,9 @@
 * C ve C++ arasındaki farklar
 * Veri Tipleri, Değişken Tanımlama (enum)
 * Global, lokal ve formal değişkenler
-* Sabitler (litterals)
-* Operatörler ve Öncelikleri (koşul operatörü)
-* Karar İfadeleri (if, elseif, else, switch-case, ?:)
+* Sabitler (litterals), const, #define
+* Operatörler ve Öncelikleri (koşul operatörü -> ? :)
+* Karar İfadeleri (if, elseif, else, switch-case, )
 * iç içe karar ifadeleri
 * Tekrarlı İfadeler (for, while, do-while)
 * Örnek: girilen sayı çift ise iki asal sayı toplamı şeklinde ifade edin.
@@ -21,12 +21,12 @@
   * 2) girilen sayının asal çarpanlarını bulun, 
   * 3) 1000 den küçük fibonacci sayılarını bulun, 
   * 4) girilen sayıyı asal çarpanlarına ayırın, asal ise bir şey yapmayın
-* Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
+* Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed, endl
 * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
 * Örnek 2: öğrenci not ortalaması hesabı
   * değişken tanımlama, değişken türleri, int bölme, tür dönüşümü
   * notların ekrana yazılması (setw,setprecision,fixed)
-  * öğrenci numarası palindrome bir numara mı (tam sayı olarak, dizi kullanmadan işlem yap)
+  * öğrenci numarası palindrome bir numara mı? (tam sayı olarak, dizi kullanmadan işlem yap)
 
 ## Hafta 03
 * diziler: tek boyutlu (vector), iki boyutlu (matris), 3 ve daha fazla boyutlu (tensor)
@@ -46,7 +46,7 @@
 * pointer, reference,
 * dizi pointer ilişkisi
 * cin, cout advanced
-* enum, namespaces
+* enum, namespaces, :: (scope operator)
 
 ## Hafta 05
 * class, struct vs class, 
@@ -59,13 +59,14 @@
   
 ## Hafta 06
 * data abstraction,
-* friend function, inline functions, this pointer
+* friend function, inline functions, 
+* this pointer
 * pointer to classes, 
 * basit pointer, class pointer, new, delete
 * dosya işlemleri, sıralı erişim
-  * ofstream,ifstream, fstream
+  * ofstream out,ifstream in, fstream
   * ios::app,ios::in,ios::out,ios::ate,ios::trunc
-  * infile.eof(), infile>>, infile<<
+  * infile.eof(), infile>>, outfile<<
 * dosya işlemleri, rasgele erişim
   * inf.seekg(),inf.seekp()
   * getline(inf,strData)
@@ -75,11 +76,12 @@
 * dosya işlemleri - örneklerle
   * rasgele erişim
   * binary dosya okuma/yazma
+    * f.read(arr,n), f.write(arr,n) -- arr must be char array
+* iplementation hiding
 
 ## Hafta 08
 * dynamic memory management (örnekler ile)
   * 1D, 2D
-* iplementation hiding
 * static members
 * function overloading
 * operator overloading

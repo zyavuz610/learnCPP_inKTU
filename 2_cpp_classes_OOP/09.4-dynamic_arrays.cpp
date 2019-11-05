@@ -8,6 +8,9 @@ int main() {
   int *p;
   int n=10;
 	p = new int[n];
+
+  // erişim
+  p[3] = 23;
 	p++;
 	*p = 35;
 */
@@ -29,9 +32,14 @@ int main() {
 //------------------------------------------
 /*
 	// 2D array
-	int** a = new int*[rowCount];
+  int **a;
+	a = new int*[rowCount];
+
 	for(int i = 0; i < rowCount; ++i)
     	a[i] = new int[colCount];
+  
+  //erişim
+  a[i][j] // *(a+i*colCount + j) 
 	
 	// bellekten silinmesi
 	for(int i = 0; i < sizeY; ++i) {
