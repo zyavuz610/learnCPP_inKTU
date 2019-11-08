@@ -3,6 +3,7 @@ using namespace std;
 
 class Voxel{
  public:
+  // burada default parametre var
    Voxel(double x=0.0,double y=0.0,double z=0.0){
      this->x = x;
      this->y = y;
@@ -18,7 +19,7 @@ class Voxel{
      v2.z = this->z + v.z;
      return v2; 
    }
-   Voxel topla(const Voxel & v){
+   Voxel sum(const Voxel & v){
      Voxel v2;
      v2.x = this->x + v.x;
      v2.y = this->y + v.y;
@@ -80,7 +81,7 @@ int main() {
  Voxel v2(5,6,7);
  v1.print();
  v2.print();
-  //Voxel v3 = v1.topla(v2);
+  //Voxel v3 = v1.sum(v2);
  Voxel v3 = v1 + v2;
  v3.print();
  v2.print();
