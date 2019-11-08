@@ -85,6 +85,13 @@
 * static members
 * function overloading
 * operator overloading
+  * binary operator overloading
+  * unary operator overloading
+  * conditional operator overloading
+  * assignment operator overloading
+  * stream operator overloading (<<, >>)
+  * function call operator overloading
+  * [] indexing operator overloading
 <code>
     c3 = c1 + c2;     // operator overloading
     
@@ -105,11 +112,12 @@
 * örnekler
 
 ## Hafta 12
-* sanal fonk. ve sınıflar
-* polimorfizm
+* templates
   
 ## Hafta 13
-* templates
+* sanal fonk. ve sınıflar
+* polimorfizm
+* ödev kontrol
   
 ## Hafta 14
 * STL
