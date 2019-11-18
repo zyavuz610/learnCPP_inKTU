@@ -9,8 +9,7 @@
 #include<string>
 using namespace std;
 
-class Time
-{     //Time class
+class Time {     //Time class
 public:
       Time();
       Time(int, int);
@@ -24,8 +23,7 @@ private:
       int min;
 };
 
-class Date
-{//Date class
+class Date {      //Date class
 public:
       Date();
       Date(int, int, int);
@@ -34,14 +32,13 @@ public:
       void printDate();
 private:
       int month;
-     int day;
+      int day;
       int year;
 };
 
  
 
-class Event
-{//Event class
+class Event {     //Event class
 public:
       Event(int hours = 0, int minutes = 0, int m = 1,
             int d = 1, int y = 1900, string name = "Christmas"); 
@@ -53,8 +50,7 @@ private:
       Date eventDay;
 };
 
-int main()
-{//instantiate an object and set data for Christmas
+int main() {      //instantiate an object and set data for Christmas
       Event object;
       object.setEventData(6, 0, 12, 25, 2010, "Christmas");
       //print out the data for object
@@ -204,22 +200,23 @@ void Event::printEventData()
       cout << " at ";
       eventTime.printTime();
       cout << endl;
-}
-// composition sonu
+}                       // composition sonu
 */
-
 // ===============================================================================================================
 /*
 	- miras, OOP programlama için önemli bir kavramdır, 
 		* yeniden kullanılabilir kod yazmak ya da kodun bakımını yapmakta (kod değişikliğinde) büyük kolaylık sağlar, 
-		* örn; kişi sınıfından oğrenci ve öğremetmen sınıfı miras alsın, kod kişi davranışı ile ilgili bir bakım gerektirse sadece kişi sınıfı değiştirilir, böylece öğrenci ve öğretmen bundan otomatik etkilenir, bunun tersi olsaydı, yani öğrenci ve öğretmen sınıfı ayrı yazılsaydı her 2 sınıf da değiştirilmek zorunda kalınacaktı (burada modelleme de önemli)
-		* bir kere kişi sınıfı tanımlandığında öğrenci sınıfı için kişi özellikleri (ad, soyad vb.) yeniden tanımlanmak zorunda değil
+		
+            * örn; kişi sınıfından oğrenci ve öğremetmen sınıfı miras alsın, kod kişi davranışı ile ilgili bir bakım gerektirse sadece kişi sınıfı değiştirilir, böylece öğrenci ve öğretmen bundan otomatik etkilenir, bunun tersi olsaydı, yani öğrenci ve öğretmen sınıfı ayrı yazılsaydı her 2 sınıf da değiştirilmek zorunda kalınacaktı (burada modelleme de önemli)
+		
+            * bir kere kişi sınıfı tanımlandığında öğrenci sınıfı için kişi özellikleri (ad, soyad vb.) yeniden tanımlanmak zorunda değil
+
 	- miras alınan -> base class, kişi
 	- miras alan -> derived class, öğrenci, öğretmen
-	- miras ilişkisi bir "is a" ilişkisidir, "yani öğrenci 'is a' person"
+	- miras ilişkisi bir "is a" ilişkisidir, yani "öğrenci 'is a' person"
 	- başka bir örnek: mammal IS-A animal, dog IS-A mammal hence dog IS-A animal as well and so on.
 		* animal < mammal < dog vb...
-	- miras kavramına gerçek hayattan örnekler veriniz (bit.ly/dr-zafer)
+	- miras kavramına gerçek hayattan örnekler veriniz (sınıf içi takım çalışması)
 	
 	base-derived class tanımlama
 		class "derived-class" [public|protected|private] "based-class"
@@ -227,12 +224,21 @@ void Event::printEventData()
 */
 //----------------------------------------------
 /*
+      * one-level inheritance
+            base class        -> Shape
+                  - width
+                  - height
+                  + setWidth(int)
+                  + setWidth(int)
+            derived class     -> Rectange : public Shape
+                  + getArea()
+*/
+
+/*
 #include <iostream>
- 
 using namespace std;
 
-// Base class
-class Shape {
+class Shape {                       // Base class
    public:
       void setWidth(int w) {
          width = w;
@@ -246,8 +252,8 @@ class Shape {
       int height;
 };
 
-// Derived class
-class Rectangle: public Shape {
+
+class Rectangle: public Shape {     // Derived class
    public:
       int getArea() { 
          return (width * height); 
@@ -275,7 +281,7 @@ int main(void) {
 //-------------------------------------------------------------------------------
 /*
 	parametrelere ilk değer atama
-	base class'ın parametreli yapıcı fonksiyonunu çağırma
+	base class'ın "parametreli yapıcı fonksiyonunu çağırma"
 	çoklu miras
 */
 
@@ -340,8 +346,8 @@ int main(void) {
 		Miras Türleri
 		- public:
 			* sıklıkla kullanılır,
-			* üyelere erişim şu şekilde olur
-				- public 	> public
+			* üyelere erişim şu şekilde olur,
+				- base class'ta public elemanlar	> derived class'ta public olur
 				- protected > protected
 				- private	> asla erişilemez
 		- protected:
