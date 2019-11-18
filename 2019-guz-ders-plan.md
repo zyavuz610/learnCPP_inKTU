@@ -8,9 +8,9 @@
 * C ve C++ arasındaki farklar
 * Veri Tipleri, Değişken Tanımlama (enum)
 * Global, lokal ve formal değişkenler
-* Sabitler (litterals)
-* Operatörler ve Öncelikleri (koşul operatörü)
-* Karar İfadeleri (if, elseif, else, switch-case, ?:)
+* Sabitler (litterals), const, #define
+* Operatörler ve Öncelikleri (koşul operatörü -> ? :)
+* Karar İfadeleri (if, elseif, else, switch-case, )
 * iç içe karar ifadeleri
 * Tekrarlı İfadeler (for, while, do-while)
 * Örnek: girilen sayı çift ise iki asal sayı toplamı şeklinde ifade edin.
@@ -21,12 +21,12 @@
   * 2) girilen sayının asal çarpanlarını bulun, 
   * 3) 1000 den küçük fibonacci sayılarını bulun, 
   * 4) girilen sayıyı asal çarpanlarına ayırın, asal ise bir şey yapmayın
-* Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
+* Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed, endl
 * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
 * Örnek 2: öğrenci not ortalaması hesabı
   * değişken tanımlama, değişken türleri, int bölme, tür dönüşümü
   * notların ekrana yazılması (setw,setprecision,fixed)
-  * öğrenci numarası palindrome bir numara mı (tam sayı olarak, dizi kullanmadan işlem yap)
+  * öğrenci numarası palindrome bir numara mı? (tam sayı olarak, dizi kullanmadan işlem yap)
 
 ## Hafta 03
 * diziler: tek boyutlu (vector), iki boyutlu (matris), 3 ve daha fazla boyutlu (tensor)
@@ -46,7 +46,7 @@
 * pointer, reference,
 * dizi pointer ilişkisi
 * cin, cout advanced
-* enum, namespaces
+* enum, namespaces, :: (scope operator)
 
 ## Hafta 05
 * class, struct vs class, 
@@ -59,13 +59,14 @@
   
 ## Hafta 06
 * data abstraction,
-* friend function, inline functions, this pointer
+* friend function, inline functions, 
+* this pointer
 * pointer to classes, 
 * basit pointer, class pointer, new, delete
 * dosya işlemleri, sıralı erişim
-  * ofstream,ifstream, fstream
+  * ofstream out,ifstream in, fstream
   * ios::app,ios::in,ios::out,ios::ate,ios::trunc
-  * infile.eof(), infile>>, infile<<
+  * infile.eof(), infile>>, outfile<<
 * dosya işlemleri, rasgele erişim
   * inf.seekg(),inf.seekp()
   * getline(inf,strData)
@@ -75,34 +76,48 @@
 * dosya işlemleri - örneklerle
   * rasgele erişim
   * binary dosya okuma/yazma
-* dynamic memory management (örnekler ile)
-  * 1D, 2D
+    * f.read(arr,n), f.write(arr,n) -- arr must be char array
 * iplementation hiding
-* static members
 
 ## Hafta 08
-* struct dizileri, struct composition
-* struct, yapılara giriş
-* composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
-* inheritance (1-level, public, protected, private inheritance)
+* dynamic memory management (örnekler ile)
+  * 1D, 2D
+* static members
+* function overloading
+* operator overloading
+  * binary operator overloading
+  * unary operator overloading
+  * conditional operator overloading
+  * assignment operator overloading
+  * stream operator overloading (<<, >>)
+  * function call operator overloading
+  * [] indexing operator overloading
+<code>
+    c3 = c1 + c2;     // operator overloading
+    
+    c3 = c1.sum(c2);  // normalde yapılması gereken
+</code>
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
 
 ## Hafta 10
-* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
-* örnekler
+* struct dizileri, struct composition
+* struct, yapılara giriş
+* composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
+* inheritance (1-level, public, protected, private inheritance)
   
 ## Hafta 11
-* function overloading
-* operator overloading
+* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
+* örnekler
 
 ## Hafta 12
-* sanal fonk. ve sınıflar
-* polimorfizm
+* templates
   
 ## Hafta 13
-* templates
+* sanal fonk. ve sınıflar
+* polimorfizm
+* ödev kontrol
   
 ## Hafta 14
 * STL

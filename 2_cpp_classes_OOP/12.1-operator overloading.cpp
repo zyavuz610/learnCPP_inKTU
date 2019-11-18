@@ -1,27 +1,35 @@
 /*
-   - saat bilgilerinin toplanması için operator overloading gerekli
-   - benzer şekilde
+# Operator Overloading
+## Neden Gerekli?
+   * bilinen operatörklerin nesneler için de çalışmasını sağlamak için kullanılır
+   * Örn; Complex c1,c2;
+   * c1 = c1 + c2;  
+   * saat bilgilerinin farkının için operator overloading gerekli
+   * benzer şekilde
       * komplex sayı toplanması
       * saat karşılaştırma
       * alan farkı vb..
-   - operator anahtar kelimesi kullanılır
-   - şu operatorler aşırı yüklenemz
+   * operator anahtar kelimesi kullanılır
+   * şu operatorler aşırı yüklenemz
       .   .*   ::   ?:   sizeof
+   * şu operatörler aşırı yüklenebilir
+   * +, -, ++, *, /, <<, (), [], vd...
 //------------------------------------------------------------   
 aşırı yükleme, member funk. ya da friend func olarak tanımlanabilir
 operatör AŞIRI YÜKLEME - friend funcion vs. member function
 member func.
-   s1 + s2 ifadesi s1.operator+(s2); haline dönüşür. 
+   "s1 + s2" ifadesi "s1.operator+(s2)" haline dönüşür. 
    Bu şu demek, fonk. ilk objenin alt fonk. olarak çağrılır.
 friend func.
-   ancak s1 + s2 de ilk operand obje değilse problem oluşur.
-   10 + s1, ya da s1 + 10 ifadeleri hata verir
-   s1 + 10 ifadesi aşırı yükleme ile düzeltilebilir
-   ancak yine de private elamanlara erişecek şekilde friend func. tanımlanarak problem çözülür,
-   aşağıda <<, >> kısmında örnek mevcut, bakınız...
+   * ancak s1 + s2 de ilk operand obje değilse problem oluşur.
+   * 10 + s1, ya da s1 + 10 ifadeleri hata verir
+   * s1 + 10 ifadesi aşırı yükleme ile düzeltilebilir
+   * ancak yine de private elamanlara erişecek şekilde friend func. tanımlanarak problem çözülür,
+   * aşağıda <<, >> kısmında örnek mevcut, bakınız...
    
 */
-
+//***********************************************************
+/*
 #include <iostream>
 using namespace std;
 
@@ -41,6 +49,7 @@ class Box {
       }
       
       // Overload + operator to add two Box objects.
+      // Box3 = Box1 + Box2
       Box operator+(const Box& b) {
          Box box;
          box.length = this->length + b.length;
@@ -89,6 +98,7 @@ int main() {
 
    return 0;
 }
+*/
 //-----------------------------------------------------------------------
 /* 
 Unary (Tekli) Operators Overloading in C++
@@ -125,10 +135,17 @@ class Distance {
       }
       
       // overloaded minus (-) operator
+      // d1 = -d
       Distance operator- () {
          feet = -feet;
          inches = -inches;
          return Distance(feet, inches);
+         
+      //   Distance d;
+      //   d.feet = -feet;
+      //   d.inches = -inches;
+      //   return d;
+         
       }
 };
 
@@ -311,15 +328,25 @@ class Distance {
          feet = f;
          inches = i;
       }
-      friend ostream &operator<<( ostream &output, const Distance &D ) { 
+      // ofstream ofile --> ostream türünden nesne
+      // cout --> ostream
+      friend ostream & operator<<( ostream &output, const Distance &D ) { 
          output << "F : " << D.feet << " I : " << D.inches;
          return output;            
       }
+
+      // Kullanımı:
+      // Distance d(1,2);
+      // cout<<d;
 
       friend istream &operator>>( istream  &input, Distance &D ) { 
          input >> D.feet >> D.inches;
          return input;            
       }
+
+      // Kullanımı
+      // Distance d;
+      // cin>>d;
 };
 
 int main() {
@@ -336,8 +363,12 @@ int main() {
 */
 //---------------------------------------------------------------------------------
 /*
-Overloading Increment ++ & Decrement --
-   ++, --
+## Overloading Increment ++ & Decrement --
+   * ++, --
+   * Kullanımı: 
+   Time t(13,20);
+   t++;  --> postfix kullanım
+   ++t;   --> normal kullanım
 */
 
 /*
@@ -376,6 +407,7 @@ class Time {
       }
       
       // overloaded postfix ++ operator
+      // t++;
       Time operator++( int ) {
       
          // save the orignal value
@@ -413,6 +445,7 @@ int main() {
 /*
 Assignment Operators Overloading in C++
    =
+   obj = obj2;
 */
 
 /*
@@ -494,6 +527,7 @@ class Distance {
          // just put random calculation
          D.feet = a + c + 10;
          D.inches = b + c + 100 ;
+
          return D;
       }
       
@@ -512,6 +546,8 @@ int main() {
    D2 = D1(10, 10, 10); // invoke operator()
    cout << "Second Distance :"; 
    D2.displayDistance();
+
+   D2(10,30,50);
 
    return 0;
 }
@@ -539,7 +575,7 @@ class safearay {
          }
       }
       
-      int &operator[](int i) {
+      int & operator[](int i) {
          if( i > SIZE ) {
             cout << "Index out of bounds" <<endl; 
             // return first element.

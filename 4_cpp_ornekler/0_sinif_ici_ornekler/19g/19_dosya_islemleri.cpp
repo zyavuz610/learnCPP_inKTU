@@ -26,7 +26,7 @@ class Classroom{
     }
     Classroom(string _ders,int _n){
       // ...
-      cout<<"Parametreli Yapıcı  çalıştı\n";
+      cout<<"Parametreli 2. Yapıcı  çalıştı\n";
       this->n = _n;
       this->ders = _ders;
       this->yer_ayir();
@@ -46,7 +46,6 @@ class Classroom{
       cout  <<"Boyut:"
             <<dosya.tellg()             // tellg(): curserin bulunduğu yeri söyler
             <<endl;                     // dosyanın boyutu
-      
       string str;
       dosya.seekg(0,ios::beg);          // dosyanın başına atla
       dosya>>str;                       // oku;
@@ -54,23 +53,20 @@ class Classroom{
             <<dosya.tellg()             // tellg(): curserin bulunduğu yeri söyler
             <<endl;                     // dosyanın boyutu
       cout<<"Boy:"<<str.length()<<endl; // stringin boyutu
-
       dosya.seekg(1,ios::cur);          // dosyada bir ileri git
-      dosya.seekg(-2,ios::cur);
+      dosya.seekg(-3,ios::end);
       getline(dosya,str);               // dosyada bir satır oku
       cout<<str<<endl;
-
-
     }
     void rasgele_erisimli_dosya_yaz(string _dosyaad){
       fstream dosya(_dosyaad,ios::app);          // dosya tanımla ve aç
-      dosya.seekp(0,ios::end);          // dosya sonuna atla
+      //dosya.seekp(0,ios::end);          // dosya sonuna atla
       cout  <<"Boyut:"
             <<dosya.tellp()             // tellg(): curserin bulunduğu yeri söyler
             <<endl;                     // dosyanın boyutu
       
-      string str = "isim listesi\n";
-      dosya<<str;                       // yaz (app modunda olduğu için dosya sonuna yazar)
+      string str = "123456789\n";
+      dosya<<str;                   // yaz (app modunda olduğu için dosya sonuna yazar)
       dosya.seekp(0,ios::beg);          // dosyanın başına atla
       cout  <<"Boyut:"
             <<dosya.tellp()             // tellg(): curserin bulunduğu yeri söyler
@@ -229,17 +225,23 @@ int main() {
   delete cptr2;
   */
 //-----------------------------------------------------
-// rasgele eişimli dosya okuma
+// rasgele erişimli dosya okuma
 /*
-  Classroom c("Veri Yapıları",10);
+  Classroom c("Veri Yapıları",20);
   c.rasgele_erisimli_dosya_oku("isimler.txt");
 */
 //-----------------------------------------------------
-// rasgele eişimli dosya okuma
+// rasgele erişimli dosya okuma
 
   Classroom c("Veri Yapıları",10);
   c.rasgele_erisimli_dosya_yaz("soyisimler.txt");
 
+
+/*
+  Classroom *c1 = new Classroom("Veri Yapıları",10);
+  c1->rasgele_erisimli_dosya_yaz("soyisimler.txt");
+  delete c1;
+*/
 //-------------------------------------------------------
 /*  
 ## geçen ders ne gördük?
@@ -269,166 +271,3 @@ int main() {
 
   */
 }
-
-//---------------------------------------------------------
-/*
-isimler.txt
------------------------
-MANSUR KÜRŞAD
-JALE
-ALİ
-MAHMUT
-GAMZE
-MİRAÇ
-YÜCEL
-KUBİLAY
-HAYATİ
-BEDRİYE MÜGE
-BİRSEN
-SERDAL
-BÜNYAMİN
-ÖZGÜR
-FERDİ
-REYHAN
-İLHAN
-GÜLŞAH
-NALAN
-SEMİH
-ERGÜN
-FATİH
-ŞENAY
-SERKAN
-EMRE
-BAHATTİN
-IRAZCA
-HATİCE
-BARIŞ
-REZAN
-FATİH
-FUAT
-GÖKHAN
-ORHAN
-MEHMET
-EVREN
-OKTAY
-HARUN
-YAVUZ
-PINAR
-MEHMET
-UMUT
-MESUDE
-HÜSEYİN CAHİT
-HAŞİM ONUR
-EYYUP SABRİ
-MUSTAFA
-MUSTAFA
-UFUK
-AHMET ALİ
-MEDİHA
-HASAN
-KAMİL
-NEBİ
-ÖZCAN
-NAGİHAN
-CEREN
-SERKAN
-HASAN
-YUSUF KENAN
-ÇETİN
-TARKAN
-MERAL LEMAN
-ERGÜN
-KENAN AHMET
-URAL
-YAHYA
-BENGÜ
-FATİH NAZMİ
-DİLEK
-MEHMET
-TUFAN AKIN
-MEHMET
-TURGAY YILMAZ
-GÜLDEHEN
-GÖKMEN
-BÜLENT
-EROL
-BAHRİ
-ÖZEN ÖZLEM
-SELMA
-TUĞSEM
-TESLİME NAZLI
-GÜLÇİN
-İSMAİL
-MURAT
-EBRU
-TÜMAY
-AHMET
-EBRU
-HÜSEYİN YAVUZ
-BAŞAK
-AYŞEGÜL
-EVRİM
-YASER
-ÜLKÜ
-ÖZHAN
-UFUK
-AKSEL
-FULYA
-
-*/
-//---------------------------------------------------------
-/*
-soyisimler.txt
-----------------------
-ŞEN
-KANDEMİR
-ÇEVİK
-ERKURAN
-TÜTEN
-ÖZTÜRK
-YÜZBAŞIOĞLU
-VURAL
-YÜCEL
-SÖNMEZ
-ERTEKİN
-DEDE
-UYANIK
-ASLAN
-AKBULUT
-ORHON
-UZ
-YAVUZ
-ERDEM
-KULAÇ
-KAYA
-SELVİ
-AKPINAR
-ABACIOĞLU
-ÇAY
-IŞIK
-ÖZER
-ÖZDEMİR
-ÖZTÜRK
-TAHTACI
-BÜYÜKCAM
-KULAKSIZ
-AKSEL
-EROĞLU
-KARAKUM
-DAL
-ÖCAL
-AYHAN
-YİĞİT
-YARBİL
-CANACANKATAN
-GÜMÜŞAY
-MURT
-HALHALLI
-ULUÖZ
-ŞEYHANLI
-ÇALIŞKANTÜRK
-YILMAZ
-SARAÇOĞLU
-SEZER
-
-*/

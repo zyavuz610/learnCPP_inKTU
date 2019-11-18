@@ -75,6 +75,14 @@ int palindromTest2(int n){
   return (ydk==t)?1:0;
 }
 
+bool checkPalindrome(string inputString) {
+    int len = inputString.length();
+    for(int i=0;i<=len/2;i++)
+        if(inputString[i]!=inputString[len-1-i])
+            return false;
+    return true;
+}
+
 int main() {
   int as=15,fn=16,num=2552;
   //  cin>>as>>fn;
@@ -112,6 +120,11 @@ int main() {
   cout<<setw(w[4])<<harf<<endl;
 
   cout<<"Numara palindrom mu? : "<<palindromTest2(num)<<endl;
-}
 
-//----------------------------------
+//--------------------------------------------------
+/*
+  cout<<checkPalindrome("ey edip adanada pide ye");
+*/
+//--------------------------------------------------
+  return 0;
+}
