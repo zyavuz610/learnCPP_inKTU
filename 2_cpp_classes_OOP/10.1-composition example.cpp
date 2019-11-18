@@ -367,7 +367,7 @@ int main(void) {
 //==============================================================
 /*
 // 	MULTIPLE INHERITANCE
-	- şu ana kadar görülen "single inheritance", yani tek bir sınıftan bir kez miraz alınıyor
+	- şu ana kadar görülen "single inheritance", yani tek bir sınıftan bir kez miras alınıyor
 	- şimdi birden çok sınıftan miras alınması durumuna bakalım:
 	- bir sınıf birden çok başka sınıftan miras alabilr,
 	- her bir sınıftan miras alma yöntemi farklı olabilir
@@ -377,13 +377,19 @@ int main(void) {
 
 */
 
+//------------------------------------------------------------------
+/*
+      multiple inheritance
+            * 2 base class
+            * 1 derived class
+*/
+
 /*
 #include <iostream>
- 
 using namespace std;
 
-// Base class Shape
-class Shape {
+
+class Shape {                 // Base class Shape
    public:
       void setWidth(int w) {
          width = w;
@@ -397,16 +403,16 @@ class Shape {
       int height;
 };
 
-// Base class PaintCost
-class PaintCost {
+
+class PaintCost {             // Base class PaintCost
    public:
       int getCost(int area) {
          return area * 70;
       }
 };
 
-// Derived class
-class Rectangle: public Shape, public PaintCost {
+
+class Rectangle: public Shape, public PaintCost {     // Derived class
    public:
       int getArea() {
          return (width * height); 
@@ -440,7 +446,7 @@ Total paint cost: $2450
 
 //==========================================================================
 /*
-	Çok Seviyeli Miras
+	Çok Seviyeli Miras - Multi-level Inheritance
 	- bir sınıf başka bir türetilmiş sınıftan miras alıyor
 	- Derived Class >> Base Class 1 >> Base Class 2
 	ya da
@@ -463,31 +469,29 @@ Total paint cost: $2450
 	
 */
 
-/*
+// C++ program to implement Multilevel Inheritance 
 
-// C++ program to implement  
-// Multilevel Inheritance 
+/*
 #include <iostream> 
 using namespace std; 
   
-// base class 
-class Vehicle  
-{ 
-  public: 
-    Vehicle() 
-    { 
-      cout << "This is a Vehicle" << endl; 
-    } 
+ 
+class Vehicle  {        // base class
+      public: 
+            Vehicle() 
+            { 
+                  cout << "This is a Vehicle" << endl; 
+            } 
 }; 
-class fourWheeler: public Vehicle 
-{  public: 
-    fourWheeler() 
-    { 
-      cout<<"Objects with 4 wheels are vehicles"<<endl; 
-    } 
+class fourWheeler: public Vehicle {  
+      public: 
+            fourWheeler() 
+            { 
+                  cout<<"Objects with 4 wheels are vehicles"<<endl; 
+            } 
 }; 
-// sub class derived from two base classes 
-class Car: public fourWheeler{ 
+ 
+class Car: public fourWheeler{ // sub class derived from two base classes
    public: 
      car() 
      { 
@@ -506,7 +510,7 @@ int main()
 
 
 */
-//================================================================================================
+//==================================================================
 /*
 	Çoklu Miras Durumunda Belirsizlik
 		- base class ların her ikisi de aynı fonksiyona sahipse bu durumda hangisinin çağırılacağı belirsiz olduğu için hata olur
@@ -540,8 +544,6 @@ int main()
     obj.base1::someFunction( );  // Function of base1 class is called
     obj.base2::someFunction();   // Function of base2 class is called.
 }
-
-
 	
 */
 
@@ -569,4 +571,9 @@ class second_derived_class: public base_class {
 class third_derived_class: public base_class {
      ... .. ...
 }
+
+*/
+
+/*
+      yukarıdaki miras şekillerine örnek veriniz (sınıf içi çalışma)
 */
