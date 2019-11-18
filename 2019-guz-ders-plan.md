@@ -106,22 +106,25 @@
 * struct, yapılara giriş
 * composition, multi-level composition (oluşum, çok seviyeli (iç içe) oluşumlar)
 * inheritance (1-level, public, protected, private inheritance)
+* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
   
 ## Hafta 11
-* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
-* örnekler
+* templates
+  * template functions
+  * template classes
 
 ## Hafta 12
-* templates
-  
-## Hafta 13
 * sanal fonk. ve sınıflar
 * polimorfizm
+  
+## Hafta 13
+* STL
+* örnekler
 * ödev kontrol
   
 ## Hafta 14
-* STL
 * ödev kontrol
+* uygulama
 
 ## Hafta 15 (telafi haftası)
 * Eksik kalan konuların telafisi
