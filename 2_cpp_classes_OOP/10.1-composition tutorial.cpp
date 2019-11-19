@@ -1,7 +1,7 @@
 /*
-	Composition in C++
+	Composition vs Inheritance in C++
 	- composition "has" ilişkisi
-	- inheritance "is" ilişkisi
+	- inheritance "is a" ilişkisi
 */
 
 /*
@@ -56,6 +56,7 @@ int main() {      //instantiate an object and set data for Christmas
       //print out the data for object
       object.printEventData();
       //instantiate the second object and set date for the fourth of July
+      
       Event object2;
       object2.setEventData(1, 15, 7, 4, 2010, "Fourth of July");
       //print out the data for the second object
@@ -69,7 +70,7 @@ Time::Time()
       min = 0;
 }
  
-Time::Time(int hours, int minutes)
+Time::Time(int hours=0, int minutes=0)
 {     //class time constructor that accepts parameters
       if(0 <= hours && hours < 24)//makes sure hours are valid
             hr = hours;
