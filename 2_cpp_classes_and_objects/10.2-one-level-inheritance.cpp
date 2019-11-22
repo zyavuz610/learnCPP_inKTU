@@ -26,7 +26,7 @@
                   - width
                   - height
                   + setWidth(int)
-                  + setWidth(int)
+                  + setHeight(int)
             derived class     -> Rectange : public Shape
                   + getArea()
 */
