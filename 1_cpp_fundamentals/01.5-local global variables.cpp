@@ -13,7 +13,7 @@ int main () {
    a = 10;
    b = 20;
    g = a + b;
-   g = topla(a,b);
+   g = topla(a,b);      // a ve b arguman olarak fonksiyona gönderilir, değerleri bellidir.
    cout << g << endl;
  
    return 0;
@@ -21,6 +21,7 @@ int main () {
 
 int topla(int x,int y){
   // burada x,y formal değişkendir, lokal gibi işlev görür, ilk değerleri çağırıldıkları yerde verilir
+  // x ve y parametredir.
   return x+y; 
 }
 

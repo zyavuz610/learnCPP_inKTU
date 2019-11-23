@@ -1,6 +1,11 @@
 /*
-	- const vs #define
-	- litterals (sabitler), eşitliğin sağ tarafında bulunurlar
+	* const vs #define
+	* const 	: değişken olarak sabit
+	* #define 	: ön işlemci sabiti 
+	* litterals (sabitler), eşitliğin sağ tarafında bulunurlar
+		* a = 5;		// burada 5 sabittir
+		* c = 'A';		// karakter sabiti 'A'
+		* char s[] = "deneme"		// string sabiti
 */
 
 #include <iostream>
