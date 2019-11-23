@@ -35,12 +35,13 @@ class Triangle:public Shape{
     ~Triangle(){
       cout<<"Triangle destructor\n";
     }
+    // bu fonksiyonlar üst sınıftan miras ile alınmıştır
+    // setHeightWidth(..)
+    // getHeightWidth(..)
   protected:
     // şu an için başka data tanımına gerek yok
     // height ve width, miras olarak alınıyor
   private:
-    // setHeightWidth(..)
-    // getHeightWidth(..)
 };
 int main() {
   Triangle t(6,10);
