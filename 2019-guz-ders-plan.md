@@ -94,7 +94,6 @@
   * [] indexing operator overloading
 <code>
     c3 = c1 + c2;     // operator overloading
-    
     c3 = c1.sum(c2);  // normalde yapılması gereken
 </code>
 
@@ -108,10 +107,10 @@
 * inheritance (1-level, public, protected, private inheritance)
   
 ## Hafta 11
-* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
 * templates
   * template functions
   * template classes
+* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
 
 ## Hafta 12
 * virtual functions and classes

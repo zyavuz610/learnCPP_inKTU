@@ -4,20 +4,33 @@ using namespace std;
   - jenerik (yani türden bağımsız) programlama yapmak için kullanılır.
   - template kullanılmasa idi o halde her tür için fonk. ya da sınıfı aşırı yükleyecktik.
   - template anahtar kelimesi kullanılır
+  - 2 türlü kullanım şekli vardır
+      - typename  -> fonk. parametre ya da geri dönüş değerlerinde kullanılır
+      - class     -> class tanımı içierisindeki değişkenler için kullanılır
+
   template <typename|class "tür_belirteci",....>
+  
   ....
   - "tür belirtici" kelimesini bundan böyle tip yerine kullanabiliriz.
   - derleyici koşma ya da derleme zamanında ilgili türü yerine koyarak çalıştırılabilir kod üretir.
   - yukarıdaki tür belirteci artık tip ya da sınıf türü olabilir. 
 */
+//-----------------------------------------------------------------
+/*
+// Fonksiyon için bir örnek
 
-
-template <typename T, typename T1> T isEqual(T a,T1 b){
+template <typename T, typename T1> 
+T isEqual(T a,T1 b){
   if(a==b) return true;
   return false;
 }
+*/
+//------------------------------------------------------------------
 
-template <class T> class Complex {
+//    class için bir örnek
+
+template <class T> 
+class Complex {
   public:
     Complex(T x=0,T y=0){
       this->x = x;
@@ -77,9 +90,7 @@ int main () {
 */
 //--------------------------------------------------------------------
 /*
-Class Template
-*/
-/*
+//    Class Template
 #include <iostream>
 #include <vector>
 #include <cstdlib>
