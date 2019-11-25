@@ -120,8 +120,10 @@
 * STL
 * örnekler
 * ödev kontrol
+* Eksik kalan konuların telafisi
   
 ## Hafta 14
+* Eksik kalan konuların telafisi
 * ödev kontrol
 * uygulama
 
