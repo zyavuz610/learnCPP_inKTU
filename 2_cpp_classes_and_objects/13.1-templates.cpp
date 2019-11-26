@@ -1,5 +1,3 @@
-#include <iostream>
-using namespace std;
 /*
   - jenerik (yani türden bağımsız) programlama yapmak için kullanılır.
   - template kullanılmasa idi o halde her tür için fonk. ya da sınıfı aşırı yükleyecktik.
@@ -16,11 +14,15 @@ using namespace std;
   - yukarıdaki tür belirteci artık tip ya da sınıf türü olabilir. 
 */
 //-----------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+//-----------------------------------------------------------------
 /*
 // Fonksiyon için bir örnek
-
-template <typename T, typename T1> 
-T isEqual(T a,T1 b){
+template <typename T> 
+T isEqual(T a,T b){
   if(a==b) return true;
   return false;
 }
