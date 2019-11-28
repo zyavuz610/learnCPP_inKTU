@@ -1,9 +1,17 @@
+/*
+verilen bir tamsayının çarpanlarını ve asal çarpanlarını bulmak
+    önce tüm çarpanlarını bulun,
+    sonra asal çarpanlarını bulun
+    daha sonra asal çarpanları cinsinden ekrana yazın
+    örn; 72 = 2*2*2*3*3
+    
+    yaren öztürk tarafından yazılmıştır
+*/
 #include <iostream>
 #include <vector>
 #include <math.h>
 using namespace std;
 //bu kod vs code da yazilip g++ ile derlendi.
-//bu bir tur arap sacidir ama asla bir kod degildir. aglatmayin beni...
 
 //Bir sayinin asal olup olmadigini kontrol etmek icin
 // bool isBool(int b)
