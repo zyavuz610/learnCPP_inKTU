@@ -110,11 +110,22 @@
 * templates
   * template functions
   * template classes
-* inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
+* inheritance in advanced 
+  * multi-level inheritance : 
+    * (Point1D > Point2D > Point3D) örneği, 
+  * multiple inheritance : 
+    * Person > Student, Person > Lecturer, Employee > Lecturer
+      * Lecturer, hem Person hem de Employee sınıfından miras alıyor (ters ağaç şeklinde)
+    * (ambiguity=belirsizlik durumu), 
+  * hierarchic : 
+    * Matrix > Table, Matrix > Image (ödevde olduğu gibi)
+      * Matrix sınıfından hem Image, hem de Table sınıfı miras alıyor (ağaç şeklinde)
 
 ## Hafta 12
-* virtual functions and classes
 * polimorfizm
+  * static binding, dynamic binding
+  * function overloading, templates, virtual functions
+* virtual functions and classes
   
 ## Hafta 13
 * STL

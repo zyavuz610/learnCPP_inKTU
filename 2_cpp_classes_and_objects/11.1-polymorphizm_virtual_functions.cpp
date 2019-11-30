@@ -1,7 +1,20 @@
 /*
 PloyMorphizm
-	* çok biçimlilik anlamı vardır
-	* miras ile yakından ilişkilidir
+	* çok biçimlilik anlamı vardır, bir nesnenin ya da fonksiyonun kullanılma biçimine bağlı olarak farklı davranması anlamına gelir
+  * C dilinde olmayan, C++ ile gelen bir özelliktir.
+    * "C_does_not_support_polymorphizm.c" kodunu inceleyin 
+  * İki farklı açıdan "polymorphizm" kavramını sınıflandırmabiliriz.
+    * programcı açısından (function overloading, templates, virtual functions)
+      * kod yazılırken "polymorphizm" tasarlanır - overloading
+      * kod çalıştırılırken "ploymorphizm" gerçekleştirilir. - overriding 
+    * derleyici açısından (static (early, compile-time) binding, dynamic (late, run time) binding)  
+  * C++ dilinde programcının kullanımına göre 3 farklı "polimorphizm" yöntemi vardır.
+      1) "Function overloading" : En basit yöntem, farklı türde parametreler alan fonksiyon, hangi tür veya parametre sayısı ile çağrılırsa fonksiyonun o biçimi kullanılır. (otomatik tür dönüşümleri uygulanır)
+      2) "Template Function/Template Class": parametrik yöntem, hangi tür ile fonk. çağrılırsa ya da nesne oluşturulursa o şekilde kullanılır.
+        * "templates.cpp" kodunu inceleyin.
+      3) "Virtual Function": Sanal fonksiyonlar yardımıyla gerçekleştirilir. miras ile ilişkisi vardır
+
+Polymorphizm by Virtual Functions
 	* şu şekilde bir miras sınıf hiyerarşisi olsun
 		- base-class
 			- derived-class1
@@ -90,7 +103,8 @@ Parent class area :
 /*
 	Virtual Functions (Sanal Fonksiyonlar)
 		* sanal fonksiyonlar görünüşte var olup gerçekte olmayan fonksiyonlardır.
-		* Gerçekte bir gövdesi olmayan fonksiyonlardır
+		* Gerçekte bir gövdesi olmayan fonksiyonlardır,
+    * bir fonksiyon "virtual" olarak tanımlanmışsa derleyici bağlama (binding) işlemini koşma zamanına bırakır. nesnenin tipine göre hangi fonksiyonun çağrılacağına karar verilir.
 		* miras kavramında, base class'te sanal bir fonksiyon tanımlanır ve derived class'ta bu fonksiyon aşırı yüklenir
 		* daha sonra base class türünde bir pointer ile derived class fonksiyonları çağrılır (polimorfizm)
 		
@@ -101,11 +115,11 @@ Parent class area :
 		* virtual anahtar kelimesi ile kullanılır.	
 		
 	KURALLAR
-		* sanal fonksiyonlar puplic alanda tanımlanmalıdırlar
-		* sanal fonksiyonlar static ya da friend olamazlar
+		* sanal fonksiyonlar "puplic" alanda tanımlanmalıdır.
+		* sanal fonksiyonlar "static" ya da "friend" olamazlar
 		* run-time polimorfizm için sanal fonksiyonlar, base class ın pointer ı ile çağrılmalıdırlar.
 		* base class ve derived class taki sanal fonksiyonların prototipleri (parametre sayıları, türleri) aynı olmak zorundadır
-		* Her zaman temel sınıfta tanımlanırlar ve türetilmiş sınıfta geçersiz kılınırlar. 
+		* Her zaman temel sınıfta tanımlanırlar ve türetilmiş sınıfta geçersiz kılınırlar (overload). 
 		* Türetilmiş sınıfın geçersiz kılınması (veya sanal işlevi yeniden tanımlaması) zorunlu değildir, bu durumda fonksiyonun temel sınıfı kullanılır.
 		* Bir sınıf sanal yıkıcıya sahip olabilir, ancak sanal bir kurucu olamaz.	
 */
@@ -155,6 +169,7 @@ return 0;
 		* temel sınıfta tanımlı herhangi bir işlevi yoktur, sadece fonksiyonun prototipi tanımlıdır
 		* virtual type func-name(parameters...)=0;  şeklinde tanımlanır.
 		* her türetilmiş sınıfta bu fonksiyon tanımlanmak zorundadır.
+      * "pure_virtual_function.cpp" dosyasını inceleyin
 	abstract class,
 		* bir sınıf en az 1 adet  saf sanal fonk. varsa o sınıf soyut sınıf olarak bilinir
 	
@@ -170,8 +185,9 @@ return 0;
 
 	abstract (soyut) class özellikleri - Interfaces
 		1. En az bir saf sanal fonk. varsa, bu sınıf soyutdur.
-		2. soyut sınıf tipinde pointer ve referanslar tanımlanabilir.
+		2. soyut sınıf tipinde pointer ve referanslar tanımlanabilir. ancak nesne değişken tanımlanamaz
 		3. türeyen sınıfta temel sınıftaki fonk.nu aşırı yüklemezsek o halde türetilen sınıf da soyut olur
+      * "pure_virtual_function.cpp" dosyasını inceleyin
 		4. soyut sınıfın yapıcı fonksiyonları olabilir.
 		
 }; 	
