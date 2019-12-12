@@ -29,3 +29,27 @@ int main()
     return 0; 
 } 
 
+//--------------------------------------------------------------------------
+/*
+#include <iostream> 
+#include <utility> 
+using namespace std; 
+  
+int main() 
+{ 
+    pair <string, pair <double, double>> PAIR1[10] ; 
+	pair <string, char> PAIR2 ;
+  
+    PAIR1[0].first = "Ali"; 
+    PAIR1[0].second.first = 50. ; 
+    PAIR1[0].second.second = 50. ; 
+  
+    cout << PAIR1[0].first << " " ; 
+    cout << PAIR1[0].second.first << " " << PAIR1[0].second.second << endl ; 
+	
+	cout << PAIR2.first ;  //it prints nothing i.e NULL 
+    cout << PAIR2.second ; //it prints nothing i.e NULL 
+  
+    return 0; 
+} 
+*/
