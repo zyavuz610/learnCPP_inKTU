@@ -128,14 +128,12 @@
 * virtual functions and classes
   
 ## Hafta 13
-* STL
-* örnekler
-* ödev kontrol
+* polymorphizm, templates => örnekler
 * Eksik kalan konuların telafisi
   
 ## Hafta 14
+* command line parameters
 * Eksik kalan konuların telafisi
-* ödev kontrol
 * uygulama
 
 ## Hafta 15 (telafi haftası)
